@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0b0b" />
+  <title>Smeke & Sarazua | Firma Legal</title>
+  <meta name="description" content="Firma legal especializada en asesoría estratégica, corporativa y contenciosa. Soluciones legales sólidas, claras y personalizadas." />
+
+  <!-- Inter (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/webp" href="imgs/logo-syz.webp">
+
+</head>
+
+<body>
+  <!-- Background layers -->
+  <div class="bg-layer bg-gradient" aria-hidden="true"></div>
+  <div class="bg-layer bg-noise" aria-hidden="true"></div>
+  <div class="bg-layer bg-vignette" aria-hidden="true"></div>
+
+  <!-- TOPBAR (changes color based on section via JS: .is-invert) -->
+  <header class="topbar" id="top" data-header>
+   <a class="brand-mini" href="#top" aria-label="Smeke & Sarazua">
+  <img class="brand-mini__logo" src="imgs/logo-syz.webp" alt="Smeke & Sarazua">
+  <span class="brand-mini__name">Smeke & Sarazua</span>
+  <span class="brand-mini__tag">Firma legal</span>
+</a>
+
+
+    <!-- Desktop nav (hidden on mobile via CSS) -->
+    <nav class="topnav" aria-label="Navegación superior">
+      <a class="topnav__link" href="#firma">La firma</a>
+      <a class="topnav__link" href="#areas">Áreas</a>
+      <a class="topnav__link" href="#socios">Socios</a>
+      <a class="topnav__link" href="#noticias">Noticias</a>
+      <a class="topnav__link" href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- Mobile menu button -->
+    <button class="menu-btn" type="button"
+      aria-label="Abrir menú"
+      aria-controls="sideMenu"
+      aria-expanded="false"
+      data-menu-open>
+      <span class="menu-btn__icon" aria-hidden="true"></span>
+      <span class="menu-btn__text">Menú</span>
+    </button>
+  </header>
+
+  <!-- SIDE MENU (responsive) -->
+  <aside class="menu" id="sideMenu" aria-hidden="true" data-menu>
+    <!-- Backdrop -->
+    <button class="menu__backdrop" type="button" aria-label="Cerrar menú" data-menu-close></button>
+
+    <!-- Panel -->
+    <div class="menu__panel" role="dialog" aria-modal="true" aria-label="Menú de navegación">
+      <div class="menu__top">
+        <a class="menu__brand" href="#inicio" data-menu-link aria-label="Inicio">
+          <span class="menu__brand-name">Smeke &amp; Sarazua</span>
+          <span class="menu__brand-tag">(n. 2026)</span>
+        </a>
+
+        <button class="menu__close" type="button" aria-label="Cerrar menú" data-menu-close>
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+
+      <nav class="menu__nav" aria-label="Navegación principal">
+        <a href="#inicio" data-menu-link>Inicio</a>
+        <a href="#firma" data-menu-link>La firma</a>
+        <a href="#areas" data-menu-link>Áreas de práctica</a>
+        <a href="#equipo" data-menu-link>Especialistas</a>
+        <a href="#frases" data-menu-link>Logros</a>
+        <a href="#vision" data-menu-link>Visión</a>
+        <a href="#socios" data-menu-link>Socios</a>
+        <a href="#noticias" data-menu-link>Noticias</a>
+        <a href="#contacto" data-menu-link>Contacto</a>
+      </nav>
+
+      <!-- Mobile-only: quick contact -->
+      <div class="menu__cta">
+        <a class="menu__cta-btn" href="mailto:contacto@smekesarazua.com">contacto@smekesarazua.com</a>
+        <a class="menu__cta-btn is-ghost" href="tel:+525512345678">+52 (55) 1234 5678</a>
+      </div>
+
+      <div class="menu__meta">
+        <p class="menu__small">Estrategia legal para decisiones que definen el futuro.</p>
+        <div class="menu__langs" aria-label="Idioma">
+          <button type="button" class="chip is-active" aria-pressed="true">ES</button>
+          <button type="button" class="chip" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio" data-theme="light">
+      <div class="hero__white">
+        <div class="container hero__white-inner">
+          <h1 class="hero__title">Smeke &amp; Sarazua</h1>
+          <p class="hero__since">(n. 2026)</p>
+        </div>
+      </div>
+
+      <!-- Dark hero (the moment you scroll down, header should invert via JS) -->
+      <div class="hero__dark" data-theme="dark">
+        <div class="container hero__dark-grid">
+          <div class="hero__left">
+            <figure class="hero__figure" aria-hidden="true">
+              <div class="hero__spotlight"></div>
+            </figure>
+          </div>
+
+          <div class="hero__right">
+            <h2 class="hero__headline">
+              Estrategia legal para decisiones que definen el futuro.
+            </h2>
+
+            <p class="hero__lead">
+              Firma legal especializada en asesoría estratégica, corporativa y contenciosa,
+              comprometida con la excelencia jurídica y la confianza de nuestros clientes.
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#firma">Conocer la firma</a>
+              <a class="btn btn--ghost" href="#areas">Áreas de práctica</a>
+            </div>
+
+            <div class="hero__stats" aria-label="Indicadores">
+              <div class="stat">
+                <div class="stat__value">Estrategia</div>
+                <div class="stat__label">visión integral</div>
+              </div>
+              <div class="stat">
+                <div class="stat__value">Certeza</div>
+                <div class="stat__label">decisiones informadas</div>
+              </div>
+              <div class="stat">
+                <div class="stat__value">Confianza</div>
+                <div class="stat__label">relaciones de largo plazo</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="scroll-hint" type="button" aria-label="Bajar a la siguiente sección" data-scroll-next="#firma">
+          <span class="scroll-hint__dot" aria-hidden="true"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ABOUT / FIRM -->
+    <section class="section section--light" id="firma" data-theme="light">
+      <div class="container grid-2">
+        <div class="block">
+          <h2 class="h2">Una firma con visión estratégica</h2>
+          <p class="p">
+            Somos un despacho de abogados enfocado en ofrecer soluciones legales sólidas, claras y personalizadas.
+            Nuestra práctica se distingue por el análisis profundo, la ética profesional y una visión integral del negocio
+            de nuestros clientes.
+          </p>
+          <p class="p">
+            Acompañamos a empresas, inversionistas y particulares en procesos legales complejos, aportando certeza jurídica
+            y valor estratégico en cada decisión.
+          </p>
+
+          <div class="callout">
+            <h3 class="h3">Más que abogados, aliados estratégicos</h3>
+            <p class="p">
+              Creemos en la práctica del derecho como una herramienta para generar estabilidad, crecimiento y confianza.
+              Nuestra asesoría se basa en la anticipación de riesgos, la claridad legal y la construcción de relaciones de largo plazo.
+            </p>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="glass-card">
+            <div class="glass-card__kicker">Compromiso</div>
+            <h3 class="glass-card__title">Excelencia jurídica con enfoque humano</h3>
+            <p class="glass-card__text">
+              Cada asunto inicia con comprensión del contexto, definición de objetivos y diseño de una ruta legal clara.
+              Priorizamos la comunicación, el análisis y la prevención.
+            </p>
+
+            <ul class="checklist" aria-label="Principios">
+              <li>Análisis profundo y claridad</li>
+              <li>Ética profesional y confidencialidad</li>
+              <li>Enfoque preventivo de riesgos</li>
+              <li>Acompañamiento cercano</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRACTICE AREAS -->
+    <section class="section section--dark" id="areas" data-theme="dark">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2 h2--invert">Áreas de práctica</h2>
+          <p class="p p--muted">
+            Soluciones legales sólidas para estructuras corporativas, contratos, controversias y cumplimiento.
+          </p>
+        </div>
+
+        <div class="areas">
+          <div class="areas__list" role="tablist" aria-label="Áreas de práctica">
+            <button class="area-link is-active" type="button" role="tab" aria-selected="true" aria-controls="area-1" id="tab-1" data-tab="area-1">
+              Derecho Corporativo
+            </button>
+            <button class="area-link" type="button" role="tab" aria-selected="false" aria-controls="area-2" id="tab-2" data-tab="area-2">
+              Derecho Contractual
+            </button>
+            <button class="area-link" type="button" role="tab" aria-selected="false" aria-controls="area-3" id="tab-3" data-tab="area-3">
+              Litigio y Resolución de Controversias
+            </button>
+            <button class="area-link" type="button" role="tab" aria-selected="false" aria-controls="area-4" id="tab-4" data-tab="area-4">
+              Cumplimiento y Asesoría Regulatoria
+            </button>
+          </div>
+
+          <div class="areas__detail">
+            <article class="area-panel is-active" id="area-1" role="tabpanel" aria-labelledby="tab-1">
+              <h3 class="h3 h3--invert">Derecho Corporativo</h3>
+              <p class="p p--invert">
+                Asesoría en constitución, gobierno corporativo, fusiones, adquisiciones y restructuras empresariales.
+              </p>
+              <div class="tags" aria-label="Temas">
+                <span class="tag">M&amp;A</span>
+                <span class="tag">Gobierno corporativo</span>
+                <span class="tag">Reestructura</span>
+              </div>
+            </article>
+
+            <article class="area-panel" id="area-2" role="tabpanel" aria-labelledby="tab-2" hidden>
+              <h3 class="h3 h3--invert">Derecho Contractual</h3>
+              <p class="p p--invert">
+                Redacción, negociación y análisis de contratos civiles y mercantiles.
+              </p>
+              <div class="tags" aria-label="Temas">
+                <span class="tag">Contratos mercantiles</span>
+                <span class="tag">Negociación</span>
+                <span class="tag">Riesgos</span>
+              </div>
+            </article>
+
+            <article class="area-panel" id="area-3" role="tabpanel" aria-labelledby="tab-3" hidden>
+              <h3 class="h3 h3--invert">Litigio y Resolución de Controversias</h3>
+              <p class="p p--invert">
+                Representación estratégica en procedimientos judiciales y arbitrales.
+              </p>
+              <div class="tags" aria-label="Temas">
+                <span class="tag">Litigio</span>
+                <span class="tag">Arbitraje</span>
+                <span class="tag">Estrategia</span>
+              </div>
+            </article>
+
+            <article class="area-panel" id="area-4" role="tabpanel" aria-labelledby="tab-4" hidden>
+              <h3 class="h3 h3--invert">Cumplimiento y Asesoría Regulatoria</h3>
+              <p class="p p--invert">
+                Prevención de riesgos legales y cumplimiento normativo.
+              </p>
+              <div class="tags" aria-label="Temas">
+                <span class="tag">Compliance</span>
+                <span class="tag">Políticas internas</span>
+                <span class="tag">Regulación</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM / SPECIALISTS -->
+    <section class="section section--texture" id="equipo" data-theme="light">
+      <div class="container grid-2">
+        <div class="block">
+          <h2 class="h2">Especialistas que comparten una visión</h2>
+          <p class="p">
+            Nuestro equipo está conformado por abogados con sólida formación académica y experiencia en firmas de prestigio,
+            comprometidos con la excelencia técnica y el trato personalizado.
+          </p>
+        </div>
+
+        <div class="block">
+          <div class="people-preview">
+            <article class="person-card">
+              <div class="person-card__avatar" aria-hidden="true"></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name">Mariana Herrera</h3>
+                <p class="person-card__role">Socia Fundadora</p>
+              </div>
+              <a class="person-card__link" href="#socios" aria-label="Ver socios">Ver perfil</a>
+            </article>
+
+            <article class="person-card">
+              <div class="person-card__avatar" aria-hidden="true"></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name">Ricardo Salgado</h3>
+                <p class="person-card__role">Socio</p>
+              </div>
+              <a class="person-card__link" href="#socios" aria-label="Ver socios">Ver perfil</a>
+            </article>
+
+            <div class="muted-note">
+              <p class="p p--muted">
+                Equipo de abogados especializados, con enfoque corporativo, contractual, litigioso y regulatorio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTES / CAROUSEL -->
+    <section class="section section--dark" id="frases" data-theme="dark">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2 h2--invert">Comprometidos con nuestros clientes</h2>
+          <p class="p p--muted">
+            Trabajamos con empresas nacionales e internacionales, inversionistas y particulares que buscan una asesoría legal
+            confiable, estratégica y orientada a resultados.
+          </p>
+        </div>
+
+        <div class="carousel" aria-label="Carrusel de frases y logros">
+          <div class="carousel__track" data-carousel-track>
+            <article class="quote">
+              <p class="quote__text">“Anticipamos riesgos para convertir decisiones complejas en rutas claras.”</p>
+              <p class="quote__meta"><strong>Enfoque</strong> — prevención y estrategia</p>
+            </article>
+
+            <article class="quote quote--alt">
+              <p class="quote__text">“La claridad jurídica también es una ventaja competitiva.”</p>
+              <p class="quote__meta"><strong>Valor</strong> — certeza y ejecución</p>
+            </article>
+
+            <article class="quote">
+              <p class="quote__text">“Relaciones de largo plazo, basadas en confianza y resultados.”</p>
+              <p class="quote__meta"><strong>Compromiso</strong> — acompañamiento</p>
+            </article>
+
+            <article class="quote quote--bold">
+              <p class="quote__text">“Asesoría estratégica en corporativo, contractual, controversias y cumplimiento.”</p>
+              <p class="quote__meta"><strong>Servicios</strong> — práctica integral</p>
+            </article>
+          </div>
+
+          <div class="carousel__controls">
+            <button class="icon-btn" type="button" aria-label="Anterior" data-carousel-prev>‹</button>
+            <button class="icon-btn" type="button" aria-label="Siguiente" data-carousel-next>›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISION -->
+    <section class="section section--light section--vision" id="vision" data-theme="light">
+      <div class="container grid-2">
+        <div class="block">
+          <h2 class="h2">Una visión que trasciende el caso</h2>
+          <p class="p">
+            Nuestra asesoría se construye con criterio legal y comprensión del negocio. Diseñamos estrategias que protegen,
+            ordenan y potencian decisiones relevantes para el crecimiento y la estabilidad.
+          </p>
+
+          <div class="pillars">
+            <div class="pillar">
+              <h3 class="h3">Visión</h3>
+              <p class="p p--muted">Soluciones integrales con perspectiva de futuro.</p>
+            </div>
+            <div class="pillar">
+              <h3 class="h3">Método</h3>
+              <p class="p p--muted">Análisis, prevención, negociación y ejecución.</p>
+            </div>
+            <div class="pillar">
+              <h3 class="h3">Relación</h3>
+              <p class="p p--muted">Comunicación clara y acompañamiento cercano.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="texture-card">
+            <div class="texture-card__blur" aria-hidden="true"></div>
+            <h3 class="texture-card__title">Confianza respaldada por trabajo</h3>
+            <p class="texture-card__text">
+              Convertimos complejidad en claridad: estructuras corporativas, acuerdos contractuales, controversias y cumplimiento,
+              con enfoque estratégico y humano.
+            </p>
+            <a class="btn btn--primary" href="#contacto">Agendar una consulta</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNERS -->
+    <section class="section section--dark" id="socios" data-theme="dark">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2 h2--invert">Socios</h2>
+          <p class="p p--muted">Un equipo directivo con experiencia, criterio y enfoque estratégico.</p>
+        </div>
+
+        <div class="partners">
+          <article class="partner-card">
+            <div class="partner-card__photo" aria-hidden="true"></div>
+            <h3 class="partner-card__name">Mariana Herrera López</h3>
+            <p class="partner-card__role">Socia Fundadora</p>
+          </article>
+
+          <article class="partner-card">
+            <div class="partner-card__photo" aria-hidden="true"></div>
+            <h3 class="partner-card__name">Ricardo Salgado Montoya</h3>
+            <p class="partner-card__role">Socio</p>
+          </article>
+
+          <article class="partner-card">
+            <div class="partner-card__photo" aria-hidden="true"></div>
+            <h3 class="partner-card__name">Paola Benítez Carranza</h3>
+            <p class="partner-card__role">Socia</p>
+          </article>
+
+          <article class="partner-card">
+            <div class="partner-card__photo" aria-hidden="true"></div>
+            <h3 class="partner-card__name">Javier Ortega Ríos</h3>
+            <p class="partner-card__role">Socio</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section class="section section--dark" id="noticias" data-theme="dark">
+      <div class="container">
+        <div class="section__head section__head--row">
+          <div>
+            <h2 class="h2 h2--invert">Análisis legal y actualidad</h2>
+            <p class="p p--muted">
+              Compartimos reflexiones, artículos y análisis sobre temas legales relevantes para nuestros clientes y el entorno empresarial actual.
+            </p>
+          </div>
+
+          <a class="btn btn--ghost btn--invert" href="#" aria-label="Ver más artículos">Ver más</a>
+        </div>
+
+        <div class="news-grid">
+          <article class="news-card">
+            <div class="news-card__media" aria-hidden="true"></div>
+            <h3 class="news-card__title">Título del artículo</h3>
+            <p class="news-card__meta">Autor — Fecha</p>
+            <p class="news-card__excerpt">
+              Resumen breve del contenido para dar contexto y motivar a leer más. Máximo 2–3 líneas.
+            </p>
+            <a class="news-card__link" href="#">Ver más</a>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__media" aria-hidden="true"></div>
+            <h3 class="news-card__title">Título del artículo</h3>
+            <p class="news-card__meta">Autor — Fecha</p>
+            <p class="news-card__excerpt">
+              Resumen breve del contenido para dar contexto y motivar a leer más. Máximo 2–3 líneas.
+            </p>
+            <a class="news-card__link" href="#">Ver más</a>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__media" aria-hidden="true"></div>
+            <h3 class="news-card__title">Título del artículo</h3>
+            <p class="news-card__meta">Autor — Fecha</p>
+            <p class="news-card__excerpt">
+              Resumen breve del contenido para dar contexto y motivar a leer más. Máximo 2–3 líneas.
+            </p>
+            <a class="news-card__link" href="#">Ver más</a>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__media" aria-hidden="true"></div>
+            <h3 class="news-card__title">Título del artículo</h3>
+            <p class="news-card__meta">Autor — Fecha</p>
+            <p class="news-card__excerpt">
+              Resumen breve del contenido para dar contexto y motivar a leer más. Máximo 2–3 líneas.
+            </p>
+            <a class="news-card__link" href="#">Ver más</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contacto" data-theme="dark">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="brand-mini brand-mini--invert" href="#inicio" aria-label="Ir al inicio">
+          <span class="brand-mini__name">Smeke &amp; Sarazua</span>
+          <span class="brand-mini__tag">(n. 2026)</span>
+        </a>
+        <p class="footer__slogan">Estrategia legal para decisiones que definen el futuro.</p>
+      </div>
+
+      <address class="footer__contact">
+        <p class="footer__line">
+          Calle Ejemplo 123, Piso 4<br>
+          Col. Del Valle, CDMX, México, C.P. 03100
+        </p>
+        <p class="footer__line">
+          +52 (55) 1234 5678<br>
+          <a href="mailto:contacto@smekesarazua.com">contacto@smekesarazua.com</a>
+        </p>
+      </address>
+
+      <div class="footer__social" aria-label="Redes sociales">
+        <a class="social-icon" href="#" aria-label="Facebook" title="Facebook">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path fill="currentColor" d="M13.5 22v-8h2.6l.4-3H13.5V9.1c0-.9.3-1.6 1.6-1.6H16.6V4.7c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5V11H7v3h2.6v8h3.9z"/>
+          </svg>
+        </a>
+        <a class="social-icon" href="#" aria-label="Instagram" title="Instagram">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path fill="currentColor" d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm9 2h-9A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4zm-4.5 4a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm5.2-.9a.9.9 0 1 1 0 1.8.9.9 0 0 1 0-1.8z"/>
+          </svg>
+        </a>
+        <a class="social-icon" href="#" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path fill="currentColor" d="M6.5 6.6a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM4.4 21.5h4.2V8.3H4.4v13.2zM10.6 8.3h4v1.8h.1c.6-1.1 1.9-2.2 4-2.2 4.2 0 5 2.8 5 6.5v7.1h-4.2v-6.3c0-1.5 0-3.4-2.1-3.4s-2.4 1.6-2.4 3.3v6.4h-4.2V8.3z"/>
+          </svg>
+        </a>
+        <a class="social-icon" href="mailto:contacto@smekesarazua.com" aria-label="Correo" title="Correo">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path fill="currentColor" d="M4 6h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm0 2v.2l8 5.3 8-5.3V8H4zm16 10V10.6l-7.4 4.9a1 1 0 0 1-1.2 0L4 10.6V18h16z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> Smeke &amp; Sarazua. Todos los derechos reservados.</p>
+      <a href="#inicio" class="to-top" aria-label="Volver arriba">↑</a>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="animaciones.js" defer></script>
+</body>
+</html>
