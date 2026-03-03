@@ -1,5 +1,5 @@
 /* =========================================================
-   animaciones.js — Smeke & Sarazua
+   animaciones.js — Smeke & Zarazua
    Incluye:
    1) Menú responsive (open/close, ESC, click backdrop, lock scroll)
    2) Tabs "Áreas de práctica"

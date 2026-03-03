@@ -26,10 +26,8 @@
 
   <!-- TOPBAR (changes color based on section via JS: .is-invert) -->
   <header class="topbar" id="top" data-header>
-   <a class="brand-mini" href="#top" aria-label="Smeke & Zarazua">
-  <img class="brand-mini__logo" src="imgs/logo-syz.webp" alt="Smeke & Zarazua">
-  <span class="brand-mini__name">Smeke & Zarazua</span>
-  <span class="brand-mini__tag">Firma legal</span>
+<a class="brand-logo" href="#top" aria-label="Smeke & Zarazua">
+  <img src="imgs/logo-syz.webp" alt="Smeke & Zarazua">
 </a>
 
 
@@ -37,8 +35,6 @@
     <nav class="topnav" aria-label="Navegación superior">
       <a class="topnav__link" href="#firma">La firma</a>
       <a class="topnav__link" href="#areas">Áreas</a>
-      <a class="topnav__link" href="#socios">Socios</a>
-      <a class="topnav__link" href="#noticias">Noticias</a>
       <a class="topnav__link" href="#contacto">Contacto</a>
     </nav>
 
@@ -61,10 +57,9 @@
     <!-- Panel -->
     <div class="menu__panel" role="dialog" aria-modal="true" aria-label="Menú de navegación">
       <div class="menu__top">
-        <a class="menu__brand" href="#inicio" data-menu-link aria-label="Inicio">
-          <span class="menu__brand-name">Smeke &amp; Zarazua</span>
-          <span class="menu__brand-tag">(n. 2026)</span>
-        </a>
+       <a class="menu__brand-logo" href="#inicio" data-menu-link aria-label="Inicio">
+  <img src="imgs/logo-syz.webp" alt="Smeke & Zarazua">
+</a>
 
         <button class="menu__close" type="button" aria-label="Cerrar menú" data-menu-close>
           <span aria-hidden="true">×</span>
@@ -75,11 +70,6 @@
         <a href="#inicio" data-menu-link>Inicio</a>
         <a href="#firma" data-menu-link>La firma</a>
         <a href="#areas" data-menu-link>Áreas de práctica</a>
-        <a href="#equipo" data-menu-link>Especialistas</a>
-        <a href="#frases" data-menu-link>Logros</a>
-        <a href="#vision" data-menu-link>Visión</a>
-        <a href="#socios" data-menu-link>Socios</a>
-        <a href="#noticias" data-menu-link>Noticias</a>
         <a href="#contacto" data-menu-link>Contacto</a>
       </nav>
 
@@ -103,12 +93,11 @@
 
     <!-- HERO -->
     <section class="hero" id="inicio" data-theme="light">
-      <div class="hero__white">
-        <div class="container hero__white-inner">
-          <h1 class="hero__title">Smeke &amp; Zarazua</h1>
-          <p class="hero__since">(n. 2026)</p>
-        </div>
-      </div>
+      <div class="container hero__white-inner">
+  <div class="hero__logo-wrap">
+    <img src="imgs/logo-syz.webp" alt="Smeke & Zarazua" class="hero__logo">
+  </div>
+</div>
 
       <!-- Dark hero (the moment you scroll down, header should invert via JS) -->
       <div class="hero__dark" data-theme="dark">
@@ -403,100 +392,6 @@
       </div>
     </section>
 
-    <!-- PARTNERS -->
-    <section class="section section--dark" id="socios" data-theme="dark">
-      <div class="container">
-        <div class="section__head">
-          <h2 class="h2 h2--invert">Socios</h2>
-          <p class="p p--muted">Un equipo directivo con experiencia, criterio y enfoque estratégico.</p>
-        </div>
-
-        <div class="partners">
-          <article class="partner-card">
-            <div class="partner-card__photo" aria-hidden="true"></div>
-            <h3 class="partner-card__name">Mariana Herrera López</h3>
-            <p class="partner-card__role">Socia Fundadora</p>
-          </article>
-
-          <article class="partner-card">
-            <div class="partner-card__photo" aria-hidden="true"></div>
-            <h3 class="partner-card__name">Ricardo Salgado Montoya</h3>
-            <p class="partner-card__role">Socio</p>
-          </article>
-
-          <article class="partner-card">
-            <div class="partner-card__photo" aria-hidden="true"></div>
-            <h3 class="partner-card__name">Paola Benítez Carranza</h3>
-            <p class="partner-card__role">Socia</p>
-          </article>
-
-          <article class="partner-card">
-            <div class="partner-card__photo" aria-hidden="true"></div>
-            <h3 class="partner-card__name">Javier Ortega Ríos</h3>
-            <p class="partner-card__role">Socio</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- NEWS -->
-    <section class="section section--dark" id="noticias" data-theme="dark">
-      <div class="container">
-        <div class="section__head section__head--row">
-          <div>
-            <h2 class="h2 h2--invert">Análisis legal y actualidad</h2>
-            <p class="p p--muted">
-              Compartimos reflexiones, artículos y análisis sobre temas legales relevantes para nuestros clientes y el entorno empresarial actual.
-            </p>
-          </div>
-
-          <a class="btn btn--ghost btn--invert" href="#" aria-label="Ver más artículos">Ver más</a>
-        </div>
-
-        <div class="news-grid">
-          <article class="news-card">
-            <div class="news-card__media" aria-hidden="true"></div>
-            <h3 class="news-card__title">Título del artículo</h3>
-            <p class="news-card__meta">Autor — Fecha</p>
-            <p class="news-card__excerpt">
-              Resumen breve del contenido para dar contexto y motivar a leer más. Máximo 2–3 líneas.
-            </p>
-            <a class="news-card__link" href="#">Ver más</a>
-          </article>
-
-          <article class="news-card">
-            <div class="news-card__media" aria-hidden="true"></div>
-            <h3 class="news-card__title">Título del artículo</h3>
-            <p class="news-card__meta">Autor — Fecha</p>
-            <p class="news-card__excerpt">
-              Resumen breve del contenido para dar contexto y motivar a leer más. Máximo 2–3 líneas.
-            </p>
-            <a class="news-card__link" href="#">Ver más</a>
-          </article>
-
-          <article class="news-card">
-            <div class="news-card__media" aria-hidden="true"></div>
-            <h3 class="news-card__title">Título del artículo</h3>
-            <p class="news-card__meta">Autor — Fecha</p>
-            <p class="news-card__excerpt">
-              Resumen breve del contenido para dar contexto y motivar a leer más. Máximo 2–3 líneas.
-            </p>
-            <a class="news-card__link" href="#">Ver más</a>
-          </article>
-
-          <article class="news-card">
-            <div class="news-card__media" aria-hidden="true"></div>
-            <h3 class="news-card__title">Título del artículo</h3>
-            <p class="news-card__meta">Autor — Fecha</p>
-            <p class="news-card__excerpt">
-              Resumen breve del contenido para dar contexto y motivar a leer más. Máximo 2–3 líneas.
-            </p>
-            <a class="news-card__link" href="#">Ver más</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
   </main>
 
   <!-- FOOTER -->
@@ -522,16 +417,7 @@
       </address>
 
       <div class="footer__social" aria-label="Redes sociales">
-        <a class="social-icon" href="#" aria-label="Facebook" title="Facebook">
-          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-            <path fill="currentColor" d="M13.5 22v-8h2.6l.4-3H13.5V9.1c0-.9.3-1.6 1.6-1.6H16.6V4.7c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5V11H7v3h2.6v8h3.9z"/>
-          </svg>
-        </a>
-        <a class="social-icon" href="#" aria-label="Instagram" title="Instagram">
-          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-            <path fill="currentColor" d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm9 2h-9A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4zm-4.5 4a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm5.2-.9a.9.9 0 1 1 0 1.8.9.9 0 0 1 0-1.8z"/>
-          </svg>
-        </a>
+        
         <a class="social-icon" href="#" aria-label="LinkedIn" title="LinkedIn">
           <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
             <path fill="currentColor" d="M6.5 6.6a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM4.4 21.5h4.2V8.3H4.4v13.2zM10.6 8.3h4v1.8h.1c.6-1.1 1.9-2.2 4-2.2 4.2 0 5 2.8 5 6.5v7.1h-4.2v-6.3c0-1.5 0-3.4-2.1-3.4s-2.4 1.6-2.4 3.3v6.4h-4.2V8.3z"/>
