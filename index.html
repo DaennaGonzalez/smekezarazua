@@ -1,443 +1,413 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0b0b0b" />
-  <title>Smeke & Zarazua | Firma Legal</title>
-  <meta name="description" content="Firma legal especializada en asesoría estratégica, corporativa y contenciosa. Soluciones legales sólidas, claras y personalizadas." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>Smeke Zarazúa Asociados | Consultoría y Litigio Fiscal</title>
+  <meta name="description" content="Firma de consultores especializada en consultoría fiscal, impuestos, seguridad social y controversia tributaria.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Smeke Zarazúa Asociados, S.C.">
+  <meta property="og:description" content="Consultoría y litigio fiscal para personas físicas y morales.">
 
-  <!-- Inter (Google Fonts) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/webp" href="imgs/logo-syz.webp">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="imgs/img-principal.webp" type="image/webp">
+  <link rel="icon" type="image/webp" href="imgs/isotipo-smeke.webp">
+  <link rel="stylesheet" href="styles.css?v=20260824f">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
-  <!-- Background layers -->
-  <div class="bg-layer bg-gradient" aria-hidden="true"></div>
-  <div class="bg-layer bg-noise" aria-hidden="true"></div>
-  <div class="bg-layer bg-vignette" aria-hidden="true"></div>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-  <!-- TOPBAR (changes color based on section via JS: .is-invert) -->
-  <header class="topbar" id="top" data-header>
-<a class="brand-logo" href="#top" aria-label="Smeke & Zarazua">
-  <img src="imgs/logo-syz.webp" alt="Smeke & Zarazua">
-</a>
+  <header class="site-header" data-header>
+    <a class="site-mark" href="#inicio" aria-label="Ir al inicio">
+      <img src="imgs/isotipo-smeke.webp" width="500" height="500" alt="Isotipo de Smeke Zarazúa Asociados">
+    </a>
 
-
-    <!-- Desktop nav (hidden on mobile via CSS) -->
-    <nav class="topnav" aria-label="Navegación superior">
-      <a class="topnav__link" href="#firma">La firma</a>
-      <a class="topnav__link" href="#areas">Áreas</a>
-      <a class="topnav__link" href="#contacto">Contacto</a>
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="#inicio">INICIO</a></li>
+        <li><a href="#firma">FIRMA</a></li>
+        <li><a href="#servicios">SERVICIOS</a></li>
+        <li><a href="#contacto">CONTACTO</a></li>
+      </ul>
     </nav>
 
-    <!-- Mobile menu button -->
-    <button class="menu-btn" type="button"
-      aria-label="Abrir menú"
-      aria-controls="sideMenu"
-      aria-expanded="false"
-      data-menu-open>
-      <span class="menu-btn__icon" aria-hidden="true"></span>
-      <span class="menu-btn__text">Menú</span>
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="mobileMenu" aria-expanded="false" data-menu-open>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
     </button>
   </header>
 
-  <!-- SIDE MENU (responsive) -->
-  <aside class="menu" id="sideMenu" aria-hidden="true" data-menu>
-    <!-- Backdrop -->
-    <button class="menu__backdrop" type="button" aria-label="Cerrar menú" data-menu-close></button>
-
-    <!-- Panel -->
-    <div class="menu__panel" role="dialog" aria-modal="true" aria-label="Menú de navegación">
-      <div class="menu__top">
-       <a class="menu__brand-logo" href="#inicio" data-menu-link aria-label="Inicio">
-  <img src="imgs/logo-syz.webp" alt="Smeke & Zarazua">
-</a>
-
-        <button class="menu__close" type="button" aria-label="Cerrar menú" data-menu-close>
-          <span aria-hidden="true">×</span>
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true" data-mobile-menu>
+    <button class="mobile-menu__backdrop" type="button" aria-label="Cerrar menú" data-menu-close></button>
+    <div class="mobile-menu__panel" role="dialog" aria-modal="true" aria-label="Menú de navegación" data-menu-panel>
+      <div class="mobile-menu__head">
+        <a href="#inicio" aria-label="Ir al inicio" data-menu-link>
+          <img src="imgs/isotipo-smeke.webp" width="500" height="500" alt="">
+        </a>
+        <button class="mobile-menu__close" type="button" aria-label="Cerrar menú" data-menu-close>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
         </button>
       </div>
-
-      <nav class="menu__nav" aria-label="Navegación principal">
-        <a href="#inicio" data-menu-link>Inicio</a>
-        <a href="#firma" data-menu-link>La firma</a>
-        <a href="#areas" data-menu-link>Áreas de práctica</a>
-        <a href="#contacto" data-menu-link>Contacto</a>
+      <nav aria-label="Navegación móvil">
+        <a href="#inicio" data-menu-link><span>01</span> INICIO</a>
+        <a href="#firma" data-menu-link><span>02</span> FIRMA</a>
+        <a href="#servicios" data-menu-link><span>03</span> SERVICIOS</a>
+        <a href="#contacto" data-menu-link><span>04</span> CONTACTO</a>
       </nav>
-
-      <!-- Mobile-only: quick contact -->
-      <div class="menu__cta">
-        <a class="menu__cta-btn" href="mailto:contacto@smekezarazua.com">contacto@smekezarazua.com</a>
-        <a class="menu__cta-btn is-ghost" href="tel:+525512345678">+52 (55) 1234 5678</a>
-      </div>
-
-      <div class="menu__meta">
-        <p class="menu__small">Estrategia legal para decisiones que definen el futuro.</p>
-        <div class="menu__langs" aria-label="Idioma">
-          <button type="button" class="chip is-active" aria-pressed="true">ES</button>
-          <button type="button" class="chip" aria-pressed="false">EN</button>
-        </div>
+      <div class="mobile-menu__contact">
+        <p>CONSULTORÍA Y LITIGIO FISCAL</p>
+        <a href="mailto:contacto@szasociados.com.mx">contacto@szasociados.com.mx</a>
+        <a href="tel:+528131426548">+52 (81) 3142-6548 Ext. 3022</a>
       </div>
     </div>
-  </aside>
-
-  <main>
-
-    <!-- HERO -->
-    <section class="hero" id="inicio" data-theme="light">
-      <div class="container hero__white-inner">
-  <div class="hero__logo-wrap">
-    <img src="imgs/logo-syz.webp" alt="Smeke & Zarazua" class="hero__logo">
   </div>
-</div>
 
-      <!-- Dark hero (the moment you scroll down, header should invert via JS) -->
-      <div class="hero__dark" data-theme="dark">
-        <div class="container hero__dark-grid">
-          <div class="hero__left">
-            <figure class="hero__figure" aria-hidden="true">
-              <div class="hero__spotlight"></div>
-            </figure>
-          </div>
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <figure class="hero__media" aria-hidden="true">
+        <img src="imgs/img-principal.webp" width="1920" height="1282" alt="" fetchpriority="high" decoding="async">
+      </figure>
 
-          <div class="hero__right">
-            <h2 class="hero__headline">
-              Estrategia legal para decisiones que definen el futuro.
-            </h2>
+      <svg class="hero__waves wave-field" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <g class="wave-group wave-group--a">
+          <path d="M-120 602C235 745 465 670 744 408S1246 102 1710 292"/>
+          <path d="M-120 584C235 727 465 652 744 390S1246 84 1710 274"/>
+          <path d="M-120 566C235 709 465 634 744 372S1246 66 1710 256"/>
+          <path d="M-120 548C235 691 465 616 744 354S1246 48 1710 238"/>
+          <path d="M-120 530C235 673 465 598 744 336S1246 30 1710 220"/>
+          <path d="M-120 512C235 655 465 580 744 318S1246 12 1710 202"/>
+          <path d="M-120 494C235 637 465 562 744 300S1246 -6 1710 184"/>
+          <path d="M-120 476C235 619 465 544 744 282S1246 -24 1710 166"/>
+          <path d="M-120 458C235 601 465 526 744 264S1246 -42 1710 148"/>
+          <path d="M-120 440C235 583 465 508 744 246S1246 -60 1710 130"/>
+          <path d="M-120 422C235 565 465 490 744 228S1246 -78 1710 112"/>
+        </g>
+        <g class="wave-group wave-group--b">
+          <path d="M518 892C775 608 1005 282 1715 218"/>
+          <path d="M548 912C797 624 1027 298 1715 236"/>
+          <path d="M578 932C819 640 1049 314 1715 254"/>
+          <path d="M608 952C841 656 1071 330 1715 272"/>
+          <path d="M638 972C863 672 1093 346 1715 290"/>
+          <path d="M668 992C885 688 1115 362 1715 308"/>
+          <path d="M698 1012C907 704 1137 378 1715 326"/>
+          <path d="M728 1032C929 720 1159 394 1715 344"/>
+          <path d="M758 1052C951 736 1181 410 1715 362"/>
+        </g>
+      </svg>
 
-            <p class="hero__lead">
-              Firma legal especializada en asesoría estratégica, corporativa y contenciosa,
-              comprometida con la excelencia jurídica y la confianza de nuestros clientes.
-            </p>
-
-            <div class="hero__cta">
-              <a class="btn btn--primary" href="#firma">Conocer la firma</a>
-              <a class="btn btn--ghost" href="#areas">Áreas de práctica</a>
-            </div>
-
-            <div class="hero__stats" aria-label="Indicadores">
-              <div class="stat">
-                <div class="stat__value">Estrategia</div>
-                <div class="stat__label">visión integral</div>
-              </div>
-              <div class="stat">
-                <div class="stat__value">Certeza</div>
-                <div class="stat__label">decisiones informadas</div>
-              </div>
-              <div class="stat">
-                <div class="stat__value">Confianza</div>
-                <div class="stat__label">relaciones de largo plazo</div>
-              </div>
-            </div>
+      <div class="container hero__content">
+        <div class="hero__copy">
+          <img class="hero__logo" src="imgs/logo-syz.webp" width="4351" height="440" alt="Smeke Zarazúa Asociados, S.C. — Consultoría y Litigio Fiscal">
+          <h1 class="hero__title" id="hero-title">Consultoría<br><span>y litigio fiscal</span></h1>
+          <p class="hero__lead">Soluciones fiscales para el cumplimiento, la mitigación de riesgos y la atención de contingencias tributarias.</p>
+          <div class="hero__actions">
+            <a class="button button--dark" href="#servicios">EXPLORAR SERVICIOS</a>
+            <a class="text-link" href="#contacto">CONTACTAR <span aria-hidden="true">↗</span></a>
           </div>
         </div>
 
-        <button class="scroll-hint" type="button" aria-label="Bajar a la siguiente sección" data-scroll-next="#firma">
-          <span class="scroll-hint__dot" aria-hidden="true"></span>
-        </button>
+        <div class="hero__note" aria-label="Enfoque de la firma">
+          <span>01 / 03</span>
+          <p>PREVENCIÓN</p>
+          <i aria-hidden="true"></i>
+          <p>DEFENSA</p>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#firma">
+        <span>DESCUBRIR</span>
+        <i aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <section class="section firm" id="firma" aria-labelledby="firma-title">
+      <div class="container firm__grid">
+        <div class="firm__copy reveal">
+          <div class="section-label"><span>01</span><p>LA FIRMA</p></div>
+          <h2 id="firma-title">Criterio fiscal para un entorno que exige anticipación.</h2>
+          <p class="lead-text">Smeke Zarazúa Asociados, S.C. es una firma de consultores especializada en materia fiscal, enfocada en atender las necesidades actuales y futuras de sus clientes ante un marco regulatorio cambiante.</p>
+          <p>Asesoramos a personas físicas y morales de distintos sectores e industrias en el cumplimiento de obligaciones fiscales y en el diseño e implementación de programas integrales para mitigar riesgos, prevenir y solucionar contingencias tributarias.</p>
+          <div class="firm__principles" aria-label="Principios de trabajo">
+            <span>CUMPLIMIENTO</span>
+            <span>MITIGACIÓN DE RIESGOS</span>
+            <span>CONTINGENCIA TRIBUTARIA</span>
+          </div>
+        </div>
+
+        <figure class="firm__image reveal reveal--delay">
+          <img src="imgs/img-1.webp" width="3964" height="3171" alt="Geometría de una estructura arquitectónica contemporánea" loading="lazy" decoding="async">
+          <figcaption>ANÁLISIS, ESTRATEGIA Y PRECISIÓN</figcaption>
+        </figure>
       </div>
     </section>
 
-    <!-- ABOUT / FIRM -->
-    <section class="section section--light" id="firma" data-theme="light">
-      <div class="container grid-2">
-        <div class="block">
-          <h2 class="h2">Una firma con visión estratégica</h2>
-          <p class="p">
-            Somos un despacho de abogados enfocado en ofrecer soluciones legales sólidas, claras y personalizadas.
-            Nuestra práctica se distingue por el análisis profundo, la ética profesional y una visión integral del negocio
-            de nuestros clientes.
-          </p>
-          <p class="p">
-            Acompañamos a empresas, inversionistas y particulares en procesos legales complejos, aportando certeza jurídica
-            y valor estratégico en cada decisión.
-          </p>
-
-          <div class="callout">
-            <h3 class="h3">Más que abogados, aliados estratégicos</h3>
-            <p class="p">
-              Creemos en la práctica del derecho como una herramienta para generar estabilidad, crecimiento y confianza.
-              Nuestra asesoría se basa en la anticipación de riesgos, la claridad legal y la construcción de relaciones de largo plazo.
-            </p>
-          </div>
-        </div>
-
-        <div class="block">
-          <div class="glass-card">
-            <div class="glass-card__kicker">Compromiso</div>
-            <h3 class="glass-card__title">Excelencia jurídica con enfoque humano</h3>
-            <p class="glass-card__text">
-              Cada asunto inicia con comprensión del contexto, definición de objetivos y diseño de una ruta legal clara.
-              Priorizamos la comunicación, el análisis y la prevención.
-            </p>
-
-            <ul class="checklist" aria-label="Principios">
-              <li>Análisis profundo y claridad</li>
-              <li>Ética profesional y confidencialidad</li>
-              <li>Enfoque preventivo de riesgos</li>
-              <li>Acompañamiento cercano</li>
-            </ul>
-          </div>
-        </div>
+    <section class="editorial-transition" aria-label="Visión fiscal integral">
+      <svg class="editorial-transition__waves wave-field" viewBox="0 0 1600 620" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <g class="wave-group wave-group--a">
+          <path d="M-160 428C194 570 465 566 760 330S1270 48 1740 236"/>
+          <path d="M-160 410C194 552 465 548 760 312S1270 30 1740 218"/>
+          <path d="M-160 392C194 534 465 530 760 294S1270 12 1740 200"/>
+          <path d="M-160 374C194 516 465 512 760 276S1270 -6 1740 182"/>
+          <path d="M-160 356C194 498 465 494 760 258S1270 -24 1740 164"/>
+          <path d="M-160 338C194 480 465 476 760 240S1270 -42 1740 146"/>
+          <path d="M-160 320C194 462 465 458 760 222S1270 -60 1740 128"/>
+          <path d="M-160 302C194 444 465 440 760 204S1270 -78 1740 110"/>
+          <path d="M-160 284C194 426 465 422 760 186S1270 -96 1740 92"/>
+        </g>
+        <g class="wave-group wave-group--b">
+          <path d="M704 690C914 400 1140 156 1730 138"/>
+          <path d="M734 712C936 418 1162 174 1730 158"/>
+          <path d="M764 734C958 436 1184 192 1730 178"/>
+          <path d="M794 756C980 454 1206 210 1730 198"/>
+          <path d="M824 778C1002 472 1228 228 1730 218"/>
+          <path d="M854 800C1024 490 1250 246 1730 238"/>
+        </g>
+      </svg>
+      <div class="container editorial-transition__copy reveal">
+        <p>UNA VISIÓN FISCAL INTEGRAL</p>
+        <h2>Del cumplimiento a la defensa,<br>una misma estrategia.</h2>
       </div>
     </section>
 
-    <!-- PRACTICE AREAS -->
-    <section class="section section--dark" id="areas" data-theme="dark">
+    <section class="section services" id="servicios" aria-labelledby="servicios-title">
       <div class="container">
-        <div class="section__head">
-          <h2 class="h2 h2--invert">Áreas de práctica</h2>
-          <p class="p p--muted">
-            Soluciones legales sólidas para estructuras corporativas, contratos, controversias y cumplimiento.
-          </p>
+        <div class="services__head reveal">
+          <div class="section-label"><span>02</span><p>ÁREAS DE PRÁCTICA</p></div>
+          <h2 id="servicios-title">Servicios diseñados alrededor de la operación y sus riesgos.</h2>
+          <p>Una práctica especializada que integra análisis, cumplimiento y defensa en materia tributaria.</p>
         </div>
 
-        <div class="areas">
-          <div class="areas__list" role="tablist" aria-label="Áreas de práctica">
-            <button class="area-link is-active" type="button" role="tab" aria-selected="true" aria-controls="area-1" id="tab-1" data-tab="area-1">
-              Derecho Corporativo
-            </button>
-            <button class="area-link" type="button" role="tab" aria-selected="false" aria-controls="area-2" id="tab-2" data-tab="area-2">
-              Derecho Contractual
-            </button>
-            <button class="area-link" type="button" role="tab" aria-selected="false" aria-controls="area-3" id="tab-3" data-tab="area-3">
-              Litigio y Resolución de Controversias
-            </button>
-            <button class="area-link" type="button" role="tab" aria-selected="false" aria-controls="area-4" id="tab-4" data-tab="area-4">
-              Cumplimiento y Asesoría Regulatoria
-            </button>
-          </div>
-
-          <div class="areas__detail">
-            <article class="area-panel is-active" id="area-1" role="tabpanel" aria-labelledby="tab-1">
-              <h3 class="h3 h3--invert">Derecho Corporativo</h3>
-              <p class="p p--invert">
-                Asesoría en constitución, gobierno corporativo, fusiones, adquisiciones y restructuras empresariales.
-              </p>
-              <div class="tags" aria-label="Temas">
-                <span class="tag">M&amp;A</span>
-                <span class="tag">Gobierno corporativo</span>
-                <span class="tag">Reestructura</span>
-              </div>
-            </article>
-
-            <article class="area-panel" id="area-2" role="tabpanel" aria-labelledby="tab-2" hidden>
-              <h3 class="h3 h3--invert">Derecho Contractual</h3>
-              <p class="p p--invert">
-                Redacción, negociación y análisis de contratos civiles y mercantiles.
-              </p>
-              <div class="tags" aria-label="Temas">
-                <span class="tag">Contratos mercantiles</span>
-                <span class="tag">Negociación</span>
-                <span class="tag">Riesgos</span>
-              </div>
-            </article>
-
-            <article class="area-panel" id="area-3" role="tabpanel" aria-labelledby="tab-3" hidden>
-              <h3 class="h3 h3--invert">Litigio y Resolución de Controversias</h3>
-              <p class="p p--invert">
-                Representación estratégica en procedimientos judiciales y arbitrales.
-              </p>
-              <div class="tags" aria-label="Temas">
-                <span class="tag">Litigio</span>
-                <span class="tag">Arbitraje</span>
-                <span class="tag">Estrategia</span>
-              </div>
-            </article>
-
-            <article class="area-panel" id="area-4" role="tabpanel" aria-labelledby="tab-4" hidden>
-              <h3 class="h3 h3--invert">Cumplimiento y Asesoría Regulatoria</h3>
-              <p class="p p--invert">
-                Prevención de riesgos legales y cumplimiento normativo.
-              </p>
-              <div class="tags" aria-label="Temas">
-                <span class="tag">Compliance</span>
-                <span class="tag">Políticas internas</span>
-                <span class="tag">Regulación</span>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TEAM / SPECIALISTS -->
-    <section class="section section--texture" id="equipo" data-theme="light">
-      <div class="container grid-2">
-        <div class="block">
-          <h2 class="h2">Especialistas que comparten una visión</h2>
-          <p class="p">
-            Nuestro equipo está conformado por abogados con sólida formación académica y experiencia en firmas de prestigio,
-            comprometidos con la excelencia técnica y el trato personalizado.
-          </p>
-        </div>
-
-        <div class="block">
-          <div class="people-preview">
-            <article class="person-card">
-              <div class="person-card__avatar" aria-hidden="true"></div>
-              <div class="person-card__info">
-                <h3 class="person-card__name">Mariana Herrera</h3>
-                <p class="person-card__role">Socia Fundadora</p>
-              </div>
-              <a class="person-card__link" href="#socios" aria-label="Ver socios">Ver perfil</a>
-            </article>
-
-            <article class="person-card">
-              <div class="person-card__avatar" aria-hidden="true"></div>
-              <div class="person-card__info">
-                <h3 class="person-card__name">Ricardo Salgado</h3>
-                <p class="person-card__role">Socio</p>
-              </div>
-              <a class="person-card__link" href="#socios" aria-label="Ver socios">Ver perfil</a>
-            </article>
-
-            <div class="muted-note">
-              <p class="p p--muted">
-                Equipo de abogados especializados, con enfoque corporativo, contractual, litigioso y regulatorio.
-              </p>
+        <div class="service-listing">
+          <details class="service-item reveal" open>
+            <summary>
+              <span class="service-item__number">01</span>
+              <span class="service-item__title">CONSULTORÍA FISCAL</span>
+              <span class="service-item__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="service-item__body">
+              <p class="service-item__intro">Diseño y ejecución de prácticas para eficientizar la carga tributaria dentro del marco regulatorio vigente y aplicable.</p>
+              <ul>
+                <li>Asesoría y planeación fiscal.</li>
+                <li>Diagnósticos fiscales y mejora de procesos contables y financieros.</li>
+                <li>Revisión conceptual de estructuras de operación y mejores prácticas.</li>
+                <li>Análisis de atributos fiscales CUCA–CUFIN.</li>
+                <li>Estructuras relacionadas con capital intelectual y activos intangibles.</li>
+                <li>Desarrollos inmobiliarios y sus implicaciones fiscales.</li>
+                <li>Opiniones fiscales y elaboración de Defense-File.</li>
+                <li>Documentación de trazabilidad, materialidad y razón de negocios.</li>
+              </ul>
             </div>
-          </div>
+          </details>
+
+          <details class="service-item reveal">
+            <summary>
+              <span class="service-item__number">02</span>
+              <span class="service-item__title">IMPUESTOS Y SEGURIDAD SOCIAL</span>
+              <span class="service-item__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="service-item__body">
+              <p class="service-item__intro">Acompañamiento para cumplir obligaciones fiscales y propiciar una relación positiva con las autoridades de la materia.</p>
+              <ul>
+                <li>Determinación y revisión de contribuciones federales y contabilidad fiscal.</li>
+                <li>Declaraciones provisionales, mensuales, definitivas y anuales.</li>
+                <li>Devolución de saldos a favor de IVA.</li>
+                <li>Incentivos, estímulos y beneficios fiscales.</li>
+                <li>Administración de nómina, retenciones, cuotas obrero-patronales y contribuciones estatales.</li>
+                <li>Seguridad social, REPSE, informativas ICSOE y SISUB.</li>
+                <li>Compliance fiscal y monitoreo normativo.</li>
+                <li>Obligaciones ante SAT, IMSS e INFONAVIT.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="service-item service-item--featured reveal">
+            <summary>
+              <span class="service-item__number">03</span>
+              <span class="service-item__title">CONTROVERSIA</span>
+              <span class="service-item__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="service-item__body">
+              <div class="controversy-visual">
+                <img src="imgs/img-principal.webp" width="1920" height="1282" alt="Estructura de cristal y acero en blanco y negro" loading="lazy" decoding="async">
+                <div><span>PREVENCIÓN</span><i></i><span>DEFENSA</span></div>
+              </div>
+              <div>
+                <p class="service-item__intro">Atención preventiva y correctiva para proteger los derechos de los contribuyentes frente a actuaciones de las autoridades fiscales.</p>
+                <ul>
+                  <li>Auditorías, visitas domiciliarias, revisiones de gabinete y revisiones electrónicas.</li>
+                  <li>Recursos de revocación, juicios de nulidad y juicios de amparo frente a créditos fiscales.</li>
+                  <li>Defensa frente a la constitucionalidad de leyes tributarias federales.</li>
+                  <li>Defensa ante congelamiento de cuentas, restricciones o cancelación de CSD, multas y resoluciones fiscales.</li>
+                  <li>Planes fiscales preventivos frente a cambios normativos.</li>
+                </ul>
+              </div>
+            </div>
+          </details>
         </div>
       </div>
     </section>
 
-    <!-- QUOTES / CAROUSEL -->
-    <section class="section section--dark" id="frases" data-theme="dark">
+    <section class="section approach" id="enfoque" aria-labelledby="enfoque-title">
       <div class="container">
-        <div class="section__head">
-          <h2 class="h2 h2--invert">Comprometidos con nuestros clientes</h2>
-          <p class="p p--muted">
-            Trabajamos con empresas nacionales e internacionales, inversionistas y particulares que buscan una asesoría legal
-            confiable, estratégica y orientada a resultados.
-          </p>
+        <div class="approach__head reveal">
+          <div class="section-label"><span>03</span><p>NUESTRO ENFOQUE</p></div>
+          <h2 id="enfoque-title">Un método claro para decisiones complejas.</h2>
         </div>
-
-        <div class="carousel" aria-label="Carrusel de frases y logros">
-          <div class="carousel__track" data-carousel-track>
-            <article class="quote">
-              <p class="quote__text">“Anticipamos riesgos para convertir decisiones complejas en rutas claras.”</p>
-              <p class="quote__meta"><strong>Enfoque</strong> — prevención y estrategia</p>
-            </article>
-
-            <article class="quote quote--alt">
-              <p class="quote__text">“La claridad jurídica también es una ventaja competitiva.”</p>
-              <p class="quote__meta"><strong>Valor</strong> — certeza y ejecución</p>
-            </article>
-
-            <article class="quote">
-              <p class="quote__text">“Relaciones de largo plazo, basadas en confianza y resultados.”</p>
-              <p class="quote__meta"><strong>Compromiso</strong> — acompañamiento</p>
-            </article>
-
-            <article class="quote quote--bold">
-              <p class="quote__text">“Asesoría estratégica en corporativo, contractual, controversias y cumplimiento.”</p>
-              <p class="quote__meta"><strong>Servicios</strong> — práctica integral</p>
-            </article>
-          </div>
-
-          <div class="carousel__controls">
-            <button class="icon-btn" type="button" aria-label="Anterior" data-carousel-prev>‹</button>
-            <button class="icon-btn" type="button" aria-label="Siguiente" data-carousel-next>›</button>
-          </div>
-        </div>
+        <ol class="approach__steps">
+          <li class="reveal">
+            <span>01</span>
+            <h3>ANALIZAR</h3>
+            <p>Comprender la estructura fiscal y operativa.</p>
+          </li>
+          <li class="reveal">
+            <span>02</span>
+            <h3>ANTICIPAR</h3>
+            <p>Identificar obligaciones, riesgos y cambios normativos.</p>
+          </li>
+          <li class="reveal">
+            <span>03</span>
+            <h3>IMPLEMENTAR</h3>
+            <p>Desarrollar y ejecutar soluciones fiscales.</p>
+          </li>
+          <li class="reveal">
+            <span>04</span>
+            <h3>DEFENDER</h3>
+            <p>Atender procedimientos y controversias.</p>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <!-- VISION -->
-    <section class="section section--light section--vision" id="vision" data-theme="light">
-      <div class="container grid-2">
-        <div class="block">
-          <h2 class="h2">Una visión que trasciende el caso</h2>
-          <p class="p">
-            Nuestra asesoría se construye con criterio legal y comprensión del negocio. Diseñamos estrategias que protegen,
-            ordenan y potencian decisiones relevantes para el crecimiento y la estabilidad.
-          </p>
-
-          <div class="pillars">
-            <div class="pillar">
-              <h3 class="h3">Visión</h3>
-              <p class="p p--muted">Soluciones integrales con perspectiva de futuro.</p>
-            </div>
-            <div class="pillar">
-              <h3 class="h3">Método</h3>
-              <p class="p p--muted">Análisis, prevención, negociación y ejecución.</p>
-            </div>
-            <div class="pillar">
-              <h3 class="h3">Relación</h3>
-              <p class="p p--muted">Comunicación clara y acompañamiento cercano.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="block">
-          <div class="texture-card">
-            <div class="texture-card__blur" aria-hidden="true"></div>
-            <h3 class="texture-card__title">Confianza respaldada por trabajo</h3>
-            <p class="texture-card__text">
-              Convertimos complejidad en claridad: estructuras corporativas, acuerdos contractuales, controversias y cumplimiento,
-              con enfoque estratégico y humano.
-            </p>
-            <a class="btn btn--primary" href="#contacto">Agendar una consulta</a>
-          </div>
-        </div>
+    <section class="authorities" aria-label="Autoridades fiscales y de seguridad social">
+      <div class="container authorities__inner reveal">
+        <p>EXPERIENCIA FRENTE A OBLIGACIONES RELACIONADAS CON</p>
+        <div><span>SAT</span><i></i><span>IMSS</span><i></i><span>INFONAVIT</span></div>
       </div>
     </section>
 
+    <section class="section contact" id="contacto" aria-labelledby="contacto-title">
+      <svg class="contact__waves wave-field" viewBox="0 0 1100 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <g class="wave-group wave-group--a">
+          <path d="M-90 520C176 626 344 570 568 346S920 70 1210 218"/>
+          <path d="M-90 500C176 606 344 550 568 326S920 50 1210 198"/>
+          <path d="M-90 480C176 586 344 530 568 306S920 30 1210 178"/>
+          <path d="M-90 460C176 566 344 510 568 286S920 10 1210 158"/>
+          <path d="M-90 440C176 546 344 490 568 266S920 -10 1210 138"/>
+          <path d="M-90 420C176 526 344 470 568 246S920 -30 1210 118"/>
+          <path d="M-90 400C176 506 344 450 568 226S920 -50 1210 98"/>
+        </g>
+      </svg>
+      <div class="container contact__grid">
+        <div class="contact__details reveal">
+          <div class="section-label"><span>04</span><p>CONTACTO</p></div>
+          <h2 id="contacto-title">Conversemos sobre su entorno fiscal.</h2>
+          <p>Prepare su mensaje y continúe la conversación directamente por WhatsApp.</p>
+
+          <address>
+            <div>
+              <span>CORREO</span>
+              <a href="mailto:contacto@szasociados.com.mx">contacto@szasociados.com.mx</a>
+            </div>
+            <div>
+              <span>TELÉFONO</span>
+              <a href="tel:+528131426548">+52 (81) 3142-6548 Ext. 3022</a>
+            </div>
+            <div>
+              <span>SITIO WEB</span>
+              <a href="http://www.szasesores.com.mx">www.szasesores.com.mx</a>
+            </div>
+            <div>
+              <span>DIRECCIÓN</span>
+              <p>José Clemente Orozco 329, Torre Helicon,<br>Piso 17, Col. Valle Oriente, San Pedro Garza García,<br>Nuevo León, C.P. 66278.</p>
+            </div>
+          </address>
+        </div>
+
+        <form class="contact-form reveal reveal--delay" action="contacto.php" method="post" target="_blank" data-contact-form data-whatsapp-number="528131426548">
+          <div class="contact-form__head">
+            <p>MENSAJE POR WHATSAPP</p>
+            <span>Los campos con * son obligatorios.</span>
+          </div>
+
+          <div class="form-row">
+            <label for="nombre">NOMBRE *</label>
+            <input id="nombre" name="nombre" type="text" autocomplete="name" minlength="2" maxlength="80" required>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-row">
+              <label for="email">CORREO *</label>
+              <input id="email" name="email" type="email" autocomplete="email" maxlength="120" required>
+            </div>
+            <div class="form-row">
+              <label for="telefono">TELÉFONO</label>
+              <input id="telefono" name="telefono" type="tel" autocomplete="tel" maxlength="40">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="servicio">ÁREA DE INTERÉS *</label>
+            <select id="servicio" name="servicio" required>
+              <option value="" selected disabled>Seleccione una opción</option>
+              <option value="consultoria">Consultoría fiscal</option>
+              <option value="impuestos">Impuestos y seguridad social</option>
+              <option value="controversia">Controversia</option>
+              <option value="otro">Otro asunto fiscal</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="mensaje">MENSAJE *</label>
+            <textarea id="mensaje" name="mensaje" rows="5" minlength="20" maxlength="1500" required></textarea>
+          </div>
+
+          <div class="form-trap" aria-hidden="true">
+            <label for="website">Sitio web</label>
+            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <label class="form-consent">
+            <input type="checkbox" name="consentimiento" value="1" required>
+            <span>Acepto abrir WhatsApp con estos datos para atender mi solicitud. *</span>
+          </label>
+
+          <button class="button button--dark contact-form__submit" type="submit">
+            <span>CONTINUAR EN WHATSAPP</span><i aria-hidden="true">↗</i>
+          </button>
+          <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+        </form>
+      </div>
+    </section>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="footer" id="contacto" data-theme="dark">
-    <div class="container footer__grid">
-      <div class="footer__brand">
-        <a class="brand-mini brand-mini--invert" href="#inicio" aria-label="Ir al inicio">
-          <span class="brand-mini__name">Smeke &amp; Zarazua</span>
-          <span class="brand-mini__tag">(n. 2026)</span>
-        </a>
-        <p class="footer__slogan">Estrategia legal para decisiones que definen el futuro.</p>
+  <footer class="site-footer">
+    <div class="container site-footer__top">
+      <div>
+        <p class="site-footer__name">SMEKE ZARAZÚA ASOCIADOS, S.C.</p>
+        <p>CONSULTORÍA Y LITIGIO FISCAL</p>
       </div>
-
-      <address class="footer__contact">
-        <p class="footer__line">
-          Calle Ejemplo 123, Piso 4<br>
-          Col. Del Valle, CDMX, México, C.P. 03100
-        </p>
-        <p class="footer__line">
-          +52 (55) 1234 5678<br>
-          <a href="mailto:contacto@smekezarazua.com">contacto@smekezarazua.com</a>
-        </p>
-      </address>
-
-      <div class="footer__social" aria-label="Redes sociales">
-        
-        <a class="social-icon" href="#" aria-label="LinkedIn" title="LinkedIn">
-          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-            <path fill="currentColor" d="M6.5 6.6a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM4.4 21.5h4.2V8.3H4.4v13.2zM10.6 8.3h4v1.8h.1c.6-1.1 1.9-2.2 4-2.2 4.2 0 5 2.8 5 6.5v7.1h-4.2v-6.3c0-1.5 0-3.4-2.1-3.4s-2.4 1.6-2.4 3.3v6.4h-4.2V8.3z"/>
-          </svg>
-        </a>
-        <a class="social-icon" href="mailto:contacto@smekezarazua.com" aria-label="Correo" title="Correo">
-          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-            <path fill="currentColor" d="M4 6h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm0 2v.2l8 5.3 8-5.3V8H4zm16 10V10.6l-7.4 4.9a1 1 0 0 1-1.2 0L4 10.6V18h16z"/>
-          </svg>
-        </a>
-      </div>
+      <nav aria-label="Navegación del pie de página">
+        <a href="#inicio">INICIO</a>
+        <a href="#firma">FIRMA</a>
+        <a href="#servicios">SERVICIOS</a>
+        <a href="#contacto">CONTACTO</a>
+      </nav>
+      <a class="back-to-top" href="#inicio" aria-label="Volver al inicio">↑</a>
     </div>
-
-    <div class="container footer__bottom">
-      <p>© <span id="year"></span> Smeke &amp; Zarazua. Todos los derechos reservados.</p>
-      <a href="#inicio" class="to-top" aria-label="Volver arriba">↑</a>
+    <div class="container site-footer__bottom">
+      <p>© <span data-year></span> Smeke Zarazúa Asociados, S.C. Todos los derechos reservados.</p>
+      <p>San Pedro Garza García, Nuevo León.</p>
     </div>
   </footer>
 
-  <!-- JS -->
-  <script src="animaciones.js" defer></script>
+  <script src="animaciones.js?v=20260824c" defer></script>
 </body>
 </html>
